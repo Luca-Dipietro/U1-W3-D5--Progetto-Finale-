@@ -576,7 +576,9 @@ halfTree(3);
 
 const tree = function (n) {
   for (let i = 1; i <= n; i++) {
-    console.log("*".repeat(i));
+    const ast = "*".repeat(2 * i - 1);
+    const space = " ".repeat(n - i);
+    console.log(space + ast);
   }
 };
 tree(3);
